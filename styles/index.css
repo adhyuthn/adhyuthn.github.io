@@ -55,7 +55,6 @@ body{
 #heading{
     color: white;
     text-align: center;
-    font-size: 150px;
     font-size: 2cm;
     font-family: 'Raleway', sans-serif;
     
@@ -122,4 +121,8 @@ body{
     font-size: 20px;
 }
 
-
+.git_flex{
+    font-size: 10px;
+    text-align: center;
+    transform: translateY(30vh);
+}
