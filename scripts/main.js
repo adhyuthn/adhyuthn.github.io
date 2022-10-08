@@ -1,4 +1,4 @@
-function ScrollDown(){
+function ScrollDown() {
     window.scrollTo(
         {
             top: 1000,
