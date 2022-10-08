@@ -1,24 +1,24 @@
-@keyframes prank{
-    100%{
+@keyframes prank {
+    100% {
         text-shadow: 7px 7px yellow;
         font-size: 310px;
 
     }
 }
 
-body{
+body {
     background-color: rgb(29, 29, 29);
 }
 
-#boldy{
+#boldy {
     font-size: larger;
     transition: 0.5s;
     animation: prank 10s;
     animation-fill-mode: forwards;
-    color:red;
+    color: red;
 }
 
-#prank{
+#prank {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     font-size: 160px;
