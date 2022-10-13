@@ -1,3 +1,4 @@
+
 @keyframes anim_bg {
     0% {
         background-position: 0% 0%;
@@ -51,7 +52,6 @@ body {
     margin: auto;
     padding-top: 500px;
     z-index: 9;
-    border-radius: 50%;
     animation: bounce 2s infinite;
 }
 
@@ -73,7 +73,6 @@ body {
 
 .nav_links {
     outline: 0;
-
     align-items: center;
     background: 0 0;
     border: 1px solid white;
@@ -83,7 +82,7 @@ body {
     display: inline-flex;
     flex-shrink: 0;
     font-family: 'Roboto Mono', monospace;
-    font-size: 12px;
+    font-size: 0.9vw;
     font-weight: 650;
     gap: 8px;
     line-height: 1.5;
@@ -128,7 +127,7 @@ body {
 }
 
 .git_flex {
-    font-size: 10px;
+    font-size: 000.50vw;
     text-align: center;
     transform: translateY(30vh);
 }

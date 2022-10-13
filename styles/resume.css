@@ -12,8 +12,7 @@ body {
 
 #boldy {
     font-size: larger;
-    transition: 0.5s;
-    animation: prank 10s;
+    animation: prank 5s;
     animation-fill-mode: forwards;
     color: red;
 }
