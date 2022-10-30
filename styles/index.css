@@ -1,4 +1,8 @@
-
+*{
+    /* border: 3px solid red; */
+    margin: 0;
+    padding: 0;
+}
 @keyframes anim_bg {
     0% {
         background-position: 0% 0%;
@@ -58,9 +62,11 @@ body {
 
 
 #heading {
+    margin-top:20vh ;
     color: white;
     text-align: center;
     font-size: 2cm;
+    cursor: pointer;
     font-family: 'Raleway', sans-serif;
 
 }
@@ -116,18 +122,47 @@ body {
 }
 
 .pane1 {
+
     color: aliceblue;
     padding: 10% 15%;
-    height: 75vh;
+    height: 85vh;
     background-color: rgb(33, 33, 33);
-    margin-top: 54vh;
+    margin-top: 55vh;
     font-weight: lighter;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
 }
 
+.pane1_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateY(20vh);
+}
+
+#pane1_text p{
+    line-height: 2.6;
+}
+
+
 .git_flex {
     font-size: 000.50vw;
+    text-align: center;
+    transform: translateY(24vh);
+}
+
+.pane2{
+    background-color: white;
+    padding: 10% 15%;
+    height: 75vh;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+#beautiful_internet{
+    color: black;
+    font-size: 10px;
     text-align: center;
     transform: translateY(30vh);
 }
