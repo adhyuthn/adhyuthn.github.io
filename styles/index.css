@@ -37,7 +37,7 @@
 
 body {
     margin: 0;
-    background-image: radial-gradient(#00ffdd81, #d33737);
+    background-image: radial-gradient(#b6a0ff, #1a1425 80%);
     background-size: 600% 600%;
     animation: anim_bg 8s ease infinite;
 }
@@ -63,7 +63,7 @@ body {
 
 #heading {
     margin-top:20vh ;
-    color: white;
+    color: #b6a0ff;
     text-align: center;
     font-size: 2cm;
     cursor: pointer;
@@ -106,7 +106,7 @@ body {
 .nav_links:hover {
 
     transform: translate(-4px, -4px);
-    box-shadow: 4px 4px 0 black;
+    box-shadow: 4px 4px 0 rgb(0, 0, 0);
 }
 
 
