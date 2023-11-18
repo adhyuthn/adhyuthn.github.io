@@ -1,6 +1,10 @@
 @font-face {
-    font-family: "Blox";
-    src: url(../resources/fonts/Blox2.ttf), format("truetype");
+    font-family: 'blox_brkregular';
+    src: url('/resources/fonts/blox2-webfont.woff2') format('woff2'),
+         url('/resources/fonts/blox2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 *{
@@ -168,7 +172,7 @@ body {
     color: #1a1425;
     position: relative;
     top: 40vh;
-    font-family: 'Blox';
+    font-family: 'blox_brkregular';
     font-size: 7vw;
     text-align: center;
 }
