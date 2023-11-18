@@ -6,7 +6,7 @@ let pane_internet = document.getElementsByClassName("pane_internet");
 function ScrollDown() {
     window.scrollTo(
         {
-            top: 1000,
+            top: screen.height,
             behavior: 'smooth'
         }
     );
