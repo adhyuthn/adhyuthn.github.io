@@ -74,9 +74,11 @@ body {
     color: #b6a0ff;
     text-align: center;
     font-size: 2cm;
-    cursor: pointer;
     font-family: 'Raleway', sans-serif;
+}
 
+#heading h1{
+    cursor: pointer;
 }
 
 .nav_links_container {
@@ -146,17 +148,13 @@ body {
     display: inline-flex;
     padding-left: 10vw;
     padding-top: 10vw;
+    font-size: 1vw;
+    line-height: 2.6
 }
 
 #pane_todo_text p{
+    font-size: 1vw;
     line-height: 2.6;
-}
-
-
-.git_flex {
-    font-size: 000.50vw;
-    text-align: center;
-    transform: translateY(24vh);
 }
 
 .pane_internet{
