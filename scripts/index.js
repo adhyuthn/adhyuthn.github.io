@@ -4,12 +4,7 @@ let pane_todo = document.getElementsByClassName("pane_todo");
 let pane_internet = document.getElementsByClassName("pane_internet");
 
 function ScrollDown() {
-    window.scrollTo(
-        {
-            top: screen.height,
-            behavior: 'smooth'
-        }
-    );
+    pane_todo[0].scrollIntoView({ behavior: 'smooth' });
 }
 
 function ChangeBG_Color() {
