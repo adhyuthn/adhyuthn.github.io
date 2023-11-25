@@ -68,13 +68,24 @@ body {
     animation: bounce 2s infinite;
 }
 
-#heading {
+#heading{
     margin-top:20vh;
     height: 75vh;
     color: #b6a0ff;
     text-align: center;
     font-size: 2cm;
     font-family: 'Raleway', sans-serif;
+}
+
+#heading h1{
+    transition: all 1s ease-out;
+}
+
+#heading h1:hover{
+    transform: translate(0, 12px);
+    /* color: #1a1425; */
+    text-shadow: 0px 0px 80px #b6a0ff;
+    font-size: 4.2cm;
 }
 
 #heading h1{
