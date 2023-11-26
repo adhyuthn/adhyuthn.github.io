@@ -33,3 +33,7 @@ function ChangeBG_Color() {
     }
 }
 
+function displayMail(){
+    document.getElementById('email').style.cssText = 'visibility: visible';
+}
+
