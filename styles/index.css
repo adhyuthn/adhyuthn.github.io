@@ -157,6 +157,7 @@ body {
     height: 100vh;
     margin: auto;
     width: 95vw;
+    margin-top: 1vh;
     /* background: inherit; */
     /* overflow: hidden; */
     border-radius: 50px;
