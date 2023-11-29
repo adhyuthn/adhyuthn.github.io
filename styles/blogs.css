@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'blox_brkregular';
+    src: url('../resources/fonts/blox2-webfont.woff2') format('woff2'),
+         url('../resources/fonts/blox2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes anim_bg {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    25% {
+        background-position: 0% 100%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    75% {
+        background-position: 100% 0%;
+    }
+}
+
+body {
+    margin: 0;
+    background-image: radial-gradient(#b6a0ff, #1a1425);
+    background-size: 10000% 10000%;
+    animation: anim_bg 8s ease infinite;
+}
+
+.mother{
+    background-color: #b6a0ff;
+    border-radius: 50px;
+    height: 80vh;
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.mother p{
+    font-family: 'blox_brkregular';
+    font-size: 7rem;
+    translate: 0% 50%;
+}
+
+.mother img{
+    width: 30rem;
+    height: 30rem;
+    /* transform: translateX(); */
+    /* position: absolute; */
+}
