@@ -24,10 +24,19 @@
     }
 }
 
+@keyframes opaque {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 body {
     margin: 0;
-    background-image: radial-gradient(#b6a0ff, #1a1425);
-    background-size: 10000% 10000%;
+    background-image: radial-gradient(#b6a0ff, #1a1425 90%);
+    background-size: 800% 9000%;
     animation: anim_bg 8s ease infinite;
 }
 
@@ -41,12 +50,13 @@ body {
     font-size: 20px;
     text-align: center;
     position: relative;
+    animation: opaque 3s;
 }
 
 .mother p{
     font-family: 'blox_brkregular';
     font-size: 7rem;
-    translate: 0% 50%;
+    translate: 0% 99%;
 }
 
 .mother img{
