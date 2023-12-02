@@ -1,7 +1,6 @@
 @import url("./base.css");
 
 body {
-    margin: 0;
     background-image: radial-gradient(#b6a0ff, #1a1425 90%);
     background-size: 800% 9000%;
     animation: anim_bg 8s ease infinite;
@@ -9,14 +8,15 @@ body {
 
 .mother{
     background-color: #b6a0ff;
+    position: relative;
     border-radius: 50px;
     height: 80vh;
     width: 95vw;
     margin-left: auto;
     margin-right: auto;
+    margin: 11vh auto auto;
     font-size: 20px;
     text-align: center;
-    position: relative;
     animation: opaque 3s;
 }
 
