@@ -60,22 +60,6 @@ body {
     animation: anim_bg 8s ease infinite;
 }
 
-#scroll_down {
-    display: flex;
-    height: 50px;
-    width: 50px;
-    justify-content: center;
-    -webkit-transition: background-color 0.25s ease-in-out;
-    transition: background-color 0.25s ease-in-out;
-    position: absolute;
-    bottom: 30px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    padding-bottom: 1vh;
-    z-index: 9;
-    animation: bounce 2s infinite;
-}
 
 #heading_nav {
     position: relative;
@@ -84,7 +68,7 @@ body {
     justify-content: center;
     flex-direction: column;
     gap: 1vh;
-    height: 100vh;
+    height: 100svh;
     animation: opaque 5s;
 }
 
@@ -115,6 +99,23 @@ body {
     padding: 0;
     margin: 0px;
     border: 0;
+}
+
+#scroll_down {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-bottom: 1vh;
+    z-index: 9;
+    animation: bounce 2s infinite;
 }
 
 .nav_links_container {
