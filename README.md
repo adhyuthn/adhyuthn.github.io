@@ -3,4 +3,4 @@ An unfinished crappy website.
 
 ---------------------------------
 
-*Responsive design is stil miles away.*
+*~~Responsive design is stil miles away.~~*
