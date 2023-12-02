@@ -91,6 +91,9 @@ body {
     .heading {
         font-size: 11rem;
     }
+    #heading_nav {
+        gap: 5vh;
+    }
 }
 
 .navbar {
