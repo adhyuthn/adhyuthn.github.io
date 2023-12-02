@@ -1,0 +1,101 @@
+/* VARIABLES */
+
+:root {
+    --ui-primary-light:      #b6a0ff;
+    --ui-primary-dark:       #1a1425;
+    --text-primary:          #b6a0ff;
+    --text-secondary:        #ffffff;
+    --text-shadow:           #d1c7f1;   
+}
+
+@font-face {
+    font-family: 'blox_brkregular';
+    src: url('/resources/fonts/blox2-webfont.woff2') format('woff2'),
+         url('/resources/fonts/blox2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes opaque {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes anim_bg {
+    0% {
+        background-position: 0% 0%;
+    }
+    
+    25% {
+        background-position: 0% 100%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+    
+    75% {
+        background-position: 100% 0%;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(15px);
+    }
+    
+    100% {
+        transform: translateY(0);
+    }
+}
+
+*{
+    /* border: 3px solid red; */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background-image: radial-gradient(var(--ui-primary-light), var(--ui-primary-dark) 72%);
+    background-size: 600% 600%;
+    animation: anim_bg 8s ease infinite;
+}
+
+.nav_links {
+    outline: 0;
+    align-items: center;
+    background: 0 0;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    border-width: 2px;
+    cursor: pointer;
+    display: inline-flex;
+    flex-shrink: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    font-weight: 650;
+    line-height: 1.5;
+    margin: 0.5rem 0.5rem;
+    overflow: hidden;
+    padding: 12px 16px;
+    justify-content: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    color: #ffffff;
+    transition: all .14s ease-out;
+    white-space: nowrap;
+}
+
+.nav_links:focus, .nav_links:hover {
+    transform: translate(0px, -4px);
+    box-shadow: 0px 5px 0 rgb(255, 255, 255);
+}

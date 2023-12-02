@@ -1,37 +1,4 @@
-@font-face {
-    font-family: 'blox_brkregular';
-    src: url('../resources/fonts/blox2-webfont.woff2') format('woff2'),
-         url('../resources/fonts/blox2-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@keyframes anim_bg {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    25% {
-        background-position: 0% 100%;
-    }
-
-    50% {
-        background-position: 100% 100%;
-    }
-
-    75% {
-        background-position: 100% 0%;
-    }
-}
-
-@keyframes opaque {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+@import url("./base.css");
 
 body {
     margin: 0;

@@ -1,65 +1,4 @@
-@font-face {
-    font-family: 'blox_brkregular';
-    src: url('/resources/fonts/blox2-webfont.woff2') format('woff2'),
-         url('/resources/fonts/blox2-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-*{
-    /* border: 3px solid red; */
-    margin: 0;
-    padding: 0;
-}
-
-@keyframes opaque {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes anim_bg {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    25% {
-        background-position: 0% 100%;
-    }
-
-    50% {
-        background-position: 100% 100%;
-    }
-
-    75% {
-        background-position: 100% 0%;
-    }
-}
-
-@keyframes bounce {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(15px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-body {
-    margin: 0;
-    background-image: radial-gradient(#b6a0ff, #1a1425 72%);
-    background-size: 600% 600%;
-    animation: anim_bg 8s ease infinite;
-}
-
+@import url("./base.css");
 
 #heading_nav {
     position: relative;
@@ -73,18 +12,17 @@ body {
 }
 
 .heading{
-    color: #b6a0ff;
+    color: var(--text-primary);
     top: 30vh;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    font-size: 9rem;
+    font-size: 10rem;
     transition: all 1s ease-out;
     cursor: pointer;
 }
 
 .heading:hover{
-    text-shadow: 0px 0px 500px #d1c7f1;
-    font-size: 11rem;
+    text-shadow: 0px 0px 100px var(--text-shadow);
 }
 
 @media (orientation: portrait) {
@@ -127,30 +65,6 @@ body {
     flex-direction: row;
 }
 
-.nav_links {
-    outline: 0;
-    align-items: center;
-    background: 0 0;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 50px;
-    border-width: 2px;
-    cursor: pointer;
-    display: inline-flex;
-    flex-shrink: 0;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 1.2rem;
-    font-weight: 650;
-    line-height: 1.5;
-    margin: 1rem 1rem 1rem 0rem;
-    overflow: hidden;
-    padding: 12px 16px;
-    justify-content: center;
-    text-decoration: none;
-    text-overflow: ellipsis;
-    color: white;
-    transition: all .14s ease-out;
-    white-space: nowrap;
-}
 
 @media (orientation: portrait) {
     .nav_links_container {
@@ -163,17 +77,12 @@ body {
     }
 }
 
-.nav_links:focus, .nav_links:hover {
-    transform: translate(0px, -4px);
-    box-shadow: 0px 4px 0 rgb(255, 255, 255);
-}
-
 #email {
     visibility: hidden ;
     font-family: 'Roboto Mono', monospace;
     font-size: 1.2rem;
     font-weight: 650;
-    color: white;
+    color: var(--text-secondary);
 }
 
 .pane_todo {
@@ -184,9 +93,8 @@ body {
     /* background: inherit; */
     /* overflow: hidden; */
     border-radius: 50px;
-    box-shadow: 0 0 5px #b6a0ff;
+    box-shadow: 0 0 5px var(--text-shadow);
     /* background-color: #1a142550; */
-    backdrop-filter: blur(100px);
 }
 
 .pane_todo_items{
@@ -199,14 +107,14 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: lighter;
     font-size: 1.25rem;
-    color: #d6c9ff;
+    color: var(--text-secondary);
     line-height: 2.6;
     position: relative;
     z-index: 5;
 }
 
 .pane_internet{
-    background-color: #b6a0ff;
+    background-color: var(--ui-primary-light);
     border-radius: 50px;
     height: 100vh;
     width: 95vw;
@@ -219,7 +127,7 @@ body {
 }
 
 #beautiful_internet{
-    color: #1a1425;
+    color: var(--ui-primary-dark);
     position: relative;
     top: 40vh;
     font-family: 'blox_brkregular';
@@ -234,5 +142,5 @@ body {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.1rem;
-    color: white;
+    color: var(--text-secondary);
 }
