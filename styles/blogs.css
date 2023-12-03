@@ -7,8 +7,11 @@ body {
 }
 
 .mother{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #b6a0ff;
-    position: relative;
     border-radius: 50px;
     height: 80vh;
     width: 95vw;
@@ -23,12 +26,9 @@ body {
 .mother p{
     font-family: 'blox_brkregular';
     font-size: 7rem;
-    translate: 0% 99%;
 }
 
 .mother img{
     width: 30rem;
     height: 30rem;
-    /* transform: translateX(); */
-    /* position: absolute; */
 }
