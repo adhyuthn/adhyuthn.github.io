@@ -16,6 +16,8 @@
     font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Oswald:wght@300&family=Space+Mono&display=swap');
+
 @keyframes opaque {
     0% {
         opacity: 0;
@@ -80,8 +82,8 @@ body {
     cursor: pointer;
     display: inline-flex;
     flex-shrink: 0;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 1.2rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.1rem;
     font-weight: 650;
     line-height: 1.5;
     margin: 0.5rem 0.5rem;

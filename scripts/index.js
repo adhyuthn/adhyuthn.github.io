@@ -33,6 +33,10 @@ function ChangeBG_Color() {
     }
 }
 
+function hacker_text() {
+    
+}
+
 function displayMail(){
     email_state = !Boolean(email_state);
     if (email_state == 1){

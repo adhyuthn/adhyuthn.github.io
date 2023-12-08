@@ -1,4 +1,6 @@
 @import url("./base.css");
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 
 #heading_nav {
     position: relative;
@@ -47,8 +49,6 @@
     height: 50px;
     width: 50px;
     justify-content: center;
-    -webkit-transition: background-color 0.25s ease-in-out;
-    transition: background-color 0.25s ease-in-out;
     position: absolute;
     bottom: 30px;
     left: 0;
@@ -93,8 +93,9 @@
     /* background: inherit; */
     /* overflow: hidden; */
     border-radius: 50px;
-    box-shadow: 0 0 5px var(--text-shadow);
-    /* background-color: #1a142550; */
+    
+    /* box-shadow: 0 0 1px var(--text-shadow); */
+    background-color: rgba(4, 4, 4, 0.444);
 }
 
 .pane_todo_items{
@@ -103,14 +104,21 @@
     justify-content: center;
     display: inline-flex;
     padding-left: 10vw;
-    top: 20vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: lighter;
-    font-size: 1.25rem;
+    top: 15vh;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    font-weight: 100;
     color: var(--text-secondary);
     line-height: 2.6;
     position: relative;
     z-index: 5;
+}
+
+#todo_header {
+    font-family: 'Space Mono', monospace;
+    font-style: bold;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
 }
 
 .pane_internet{
