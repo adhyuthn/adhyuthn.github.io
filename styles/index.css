@@ -79,7 +79,7 @@
 
 #email {
     visibility: hidden ;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Space Mono', monospace;
     font-size: 1.2rem;
     font-weight: 650;
     color: var(--text-secondary);
@@ -105,9 +105,8 @@
     display: inline-flex;
     padding-left: 10vw;
     top: 15vh;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Space Mono', monospace;
     font-size: 1.2rem;
-    font-weight: 100;
     color: var(--text-secondary);
     line-height: 2.6;
     position: relative;
@@ -116,7 +115,6 @@
 
 #todo_header {
     font-family: 'Space Mono', monospace;
-    font-style: bold;
     font-size: 4rem;
     color: rgb(255, 255, 255);
 }
