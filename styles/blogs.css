@@ -1,34 +1,74 @@
 @import url("./base.css");
 
+
+
 body {
     background-image: radial-gradient(#b6a0ff, #1a1425 90%);
     background-size: 800% 9000%;
     animation: anim_bg 8s ease infinite;
+    margin-bottom: 20vh;
+    margin-top: 3vh;
 }
 
-.mother{
+.main-flexbox {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #b6a0ff;
-    border-radius: 50px;
-    height: 80vh;
-    width: 95vw;
+    gap: 2vh;
+    /* justify-content: center; */
+    /* align-items: center; */
+    
+}
+
+.nav_links_container{
+    margin: 0;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
-    margin: 11vh auto auto;
-    font-size: 20px;
-    text-align: center;
-    animation: opaque 3s;
 }
 
-.mother p{
+.grid-container {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    gap: 1vw;
+    background-color: transparent;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.grid-container > div {
+    display: flex;
+    border-radius: 50px;
+    background-color: var(--ui-panes-primary);
+    height: 30vw;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+    font-family: 'Space Mono', 'monospace';
+    color: aliceblue;
+}
+
+.grid-container > div > p {
+    justify-content: center;
+    font-size: 1vw;
+    font-family: 'Space Mono', 'monospace';
+    color: aliceblue;
+}
+
+.grid-container > .post-header {
+    background-color: var(--ui-primary-light);
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 3;
+}
+
+
+#POST-HEADER {
     font-family: 'blox_brkregular';
-    font-size: 7rem;
-}
-
-.mother img{
-    width: 30rem;
-    height: 30rem;
+    color: var(--ui-primary-dark);
+    text-shadow: 0px 0px 8px ;
+    font-size: 10vw;
 }

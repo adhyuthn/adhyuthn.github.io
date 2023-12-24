@@ -10,7 +10,6 @@
     flex-direction: column;
     gap: 1vh;
     height: 100svh;
-    animation: opaque 5s;
 }
 
 .heading{
@@ -93,9 +92,8 @@
     /* background: inherit; */
     /* overflow: hidden; */
     border-radius: 50px;
-    
     /* box-shadow: 0 0 1px var(--text-shadow); */
-    background-color: rgba(4, 4, 4, 0.444);
+    background-color: var(--ui-panes-primary);
 }
 
 .pane_todo_items{
@@ -139,7 +137,6 @@
     font-family: 'blox_brkregular';
     font-size: 8rem;
     text-decoration: none;
-    vertical-align: center;
 }
 
 #made_with{

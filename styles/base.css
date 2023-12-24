@@ -3,6 +3,7 @@
 :root {
     --ui-primary-light:      #b6a0ff;
     --ui-primary-dark:       #1a1425;
+    --ui-panes-primary:      #04040471;
     --text-primary:          #b6a0ff;
     --text-secondary:        #ffffff;
     --text-shadow:           #d1c7f1;   
@@ -63,6 +64,10 @@
     /* border: 3px solid red; */
     margin: 0;
     padding: 0;
+}
+
+* :not(body){
+    animation: opaque 2s;
 }
 
 body {
