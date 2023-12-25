@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="google-site-verification" content="eiqWAg5pd3KI5CE0nIVXu2K1M_AjEr8zJ3C4lMLe_qY" />
     <link href="styles/index.css" rel="stylesheet">
-    <script src="scripts/index.js"></script>
+    <script src="scripts/index.js" type="module"></script>
     <link rel="icon" href="resources/favicon.ico" type="image/x-icon" />
     <title>Adhyuth</title>
 </head>
@@ -13,19 +13,19 @@
 <body>
     
     <div id = "heading_nav">
-        <p class = "heading" onclick="ChangeBG_Color()">Adhyuth Narayan.</p>
+        <p class = "heading">Adhyuth Narayan.</p>
         <nav class="navbar">
             <div class="nav_links_container">
                 <a class="nav_links" href="./blog/blogs.html">Blog</a>
                 <a class="nav_links" href="https://github.com/adhyuthn">Github</a>
                 <a class="nav_links" href="https://docs.google.com/document/d/13qrFtzGhkzz-oQs5COEEHyM9-mkxpwEizCgQLHpAp50/edit?usp=sharing">Résumé</a>
                 <a class="nav_links" href="https://www.linkedin.com/in/adhyuth-narayan">LinkedIn</a>
-                <a class="nav_links" onclick="displayMail()">Email</a>
+                <a class="nav_links" id = "email_button">Email</a>
             </div>
         </nav>
         <p id ="email">adhyuthnarayan008[at]gmail[dot]com</p>
         <div id="scroll_down">
-            <input type="image" name="Scroll Down" onclick="ScrollDown()" src="resources/svg/chevrons-down.svg">
+            <input type="image" name="Scroll Down" src="resources/svg/chevrons-down.svg">
         </div>
     </div>
 
