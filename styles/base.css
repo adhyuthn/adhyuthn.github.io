@@ -67,7 +67,7 @@
 }
 
 * :not(body){
-    animation: opaque 2s;
+    animation: opaque 1s;
 }
 
 body {
@@ -75,6 +75,10 @@ body {
     background-image: radial-gradient(var(--ui-primary-light), var(--ui-primary-dark) 72%);
     background-size: 600% 600%;
     animation: anim_bg 8s ease infinite;
+}
+
+.nav_links_container {
+    display: flex;
 }
 
 .nav_links {
@@ -98,11 +102,19 @@ body {
     text-decoration: none;
     text-overflow: ellipsis;
     color: #ffffff;
-    transition: all .14s ease-out;
+    transition: all 0.2s ease-out;
     white-space: nowrap;
 }
 
 .nav_links:focus, .nav_links:hover {
     transform: translate(0px, -4px);
     box-shadow: 0px 5px 0 rgb(255, 255, 255);
+}
+
+.nav_links_container:hover > .nav_links{
+    opacity: 0.3;
+}
+
+.nav_links_container:hover > .nav_links:hover {
+    opacity: 1;
 }

@@ -59,7 +59,6 @@
 }
 
 .nav_links_container {
-    display: flex;
     justify-content: center;
     flex-direction: row;
 }
