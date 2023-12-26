@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 
+
 #heading_nav {
     position: relative;
     display: flex;
@@ -26,14 +27,6 @@
     text-shadow: 0px 0px 100px var(--text-shadow);
 }
 
-@media (orientation: portrait) {
-    .heading {
-        font-size: 11rem;
-    }
-    #heading_nav {
-        gap: 5vh;
-    }
-}
 
 .navbar {
     position: relative;
@@ -61,18 +54,6 @@
 .nav_links_container {
     justify-content: center;
     flex-direction: row;
-}
-
-
-@media (orientation: portrait) {
-    .nav_links_container {
-        flex-direction: column;
-    }
-    .nav_links {
-        width: 40vw;
-        font-size: 2rem;
-        text-align: center;
-    }
 }
 
 #email {
@@ -145,4 +126,28 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.1rem;
     color: var(--text-secondary);
+}
+
+@media (orientation: portrait) {
+    .nav_links_container {
+        flex-direction: column;
+        gap: 0.9vh;
+    }
+    .nav_links {
+        width: 60vw;
+        height: 4vh;
+        font-size: 2rem;
+        text-align: center;
+        border-radius: 20vw;
+    }
+    #scroll_down {
+        height: 6rem;
+        width: 6rem;
+    }
+    .heading {
+        font-size: 11rem;
+    }
+    #heading_nav {
+        gap: 5vh;
+    }
 }

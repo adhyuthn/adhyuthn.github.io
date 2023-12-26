@@ -14,7 +14,6 @@ body {
     gap: 2vh;
     /* justify-content: center; */
     /* align-items: center; */
-    
 }
 
 .nav_links_container{
@@ -43,14 +42,12 @@ body {
     height: 30vw;
     align-items: center;
     justify-content: center;
-    font-size: 1vw;
-    font-family: 'Space Mono', 'monospace';
     color: aliceblue;
 }
 
 .grid-container > div > p {
     justify-content: center;
-    font-size: 1vw;
+    font-size: 1rem;
     font-family: 'Space Mono', 'monospace';
     color: aliceblue;
 }
@@ -69,4 +66,32 @@ body {
     color: var(--ui-primary-dark);
     text-shadow: 0px 0px 8px ;
     font-size: 10vw;
+}
+
+@media (orientation: portrait) {
+    body{
+        margin-bottom: auto;
+    }
+    .grid-container {
+        display: flex;
+    }  
+    .grid-container {
+        flex-direction: column;
+    }
+    .grid-container > div {
+        /* width: 80vw; */
+        height: 13vh; 
+    }
+    .grid-container > div > p{
+        font-size: 2rem;
+    }
+    .grid-container > .post-header{
+        height: 18vh;
+    }
+    #POST-HEADER {
+        font-size: 10rem;
+    }
+    .nav_links{
+        font-size: 1.5rem;
+    }
 }
