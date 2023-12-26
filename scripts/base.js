@@ -17,12 +17,14 @@ function Set_theme(state) {
             root_css.style.setProperty('--ui-primary-dark', '#000000');
             root_css.style.setProperty('--text-primary', '#ffffff');
             root_css.style.setProperty('--text-shadow', '#ffffff');
-    }
-    else{
+            root_css.style.setProperty('--ui-panes-primary', '#6b6b6b5c');
+        }
+        else{
             root_css.style.setProperty('--ui-primary-light', '#b6a0ff');
             root_css.style.setProperty('--ui-primary-dark', '#1a1425');
             root_css.style.setProperty('--text-primary', '#b6a0ff');
             root_css.style.setProperty('--text-shadow', '#d1c7f1');
+            root_css.style.setProperty('--ui-panes-primary', '#04040471');
         
     }
 }
