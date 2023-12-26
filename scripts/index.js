@@ -1,4 +1,4 @@
-import './base.js';
+import * as base from './base.js';
 
 let email_state = 0;
 let pane_todo = document.getElementsByClassName("pane_todo");
@@ -20,6 +20,6 @@ function displayMail(){
     }
 }
 
-scroll_button.addEventListener("click", ScrollDown());
-heading.addEventListener("click", ChangeBG_Color())
-email.addEventListener("click", displayMail());
+scroll_button.addEventListener("click", ScrollDown);
+heading.addEventListener("click", base.ChangeBG_Color)
+email.addEventListener("click", displayMail);

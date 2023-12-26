@@ -1,9 +1,7 @@
 @import url("./base.css");
 
-
-
 body {
-    background-image: radial-gradient(#b6a0ff, #1a1425 90%);
+    background-image: radial-gradient(var(--ui-primary-light), var(--ui-primary-dark) 90%);
     background-size: 800% 9000%;
     animation: anim_bg 8s ease infinite;
     margin-bottom: 20vh;
