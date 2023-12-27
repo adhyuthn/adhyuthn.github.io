@@ -49,6 +49,11 @@
     padding-bottom: 1vh;
     z-index: 9;
     animation: bounce 2s infinite;
+    transition: all 0.2s;
+}
+
+#scroll_down:hover {
+    filter: drop-shadow(0 0 0.75rem white);
 }
 
 .nav_links_container {
@@ -65,8 +70,11 @@
 }
 
 .pane_todo {
-    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
     margin: auto;
+    scroll-margin: 4vh;
     width: 95vw;
     margin-top: 1vh;
     /* background: inherit; */
@@ -74,15 +82,16 @@
     border-radius: 50px;
     /* box-shadow: 0 0 1px var(--text-shadow); */
     background-color: var(--ui-panes-primary);
+    overflow-y: scroll;
 }
 
-.pane_todo_items{
+.pane_text_contents{
     display: flex;
     flex-direction: column;
     justify-content: center;
     display: inline-flex;
     padding-left: 10vw;
-    top: 15vh;
+    /* top: 15vh; */
     font-family: 'Space Mono', monospace;
     font-size: 1.2rem;
     color: var(--text-secondary);
@@ -90,6 +99,11 @@
     position: relative;
     z-index: 5;
 }
+
+/* .pane_proj_details { 
+     I"LL BE BACK
+} */
+
 
 #todo_header {
     font-family: 'Space Mono', monospace;
@@ -104,10 +118,11 @@
     width: 95vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 50px;
     font-size: 20px;
     text-align: center;
+    overflow: hidden;
 }
 
 #beautiful_internet{
@@ -129,6 +144,15 @@
 }
 
 @media (orientation: portrait) {
+    #todo_header {
+        font-size: 7rem;
+    }
+    .pane_text_contents {
+        justify-content: flex-start;
+        font-size: 2rem;
+        padding-top: 10vw;
+        padding-right: 10vw;
+    }
     .nav_links_container {
         flex-direction: column;
         gap: 0.9vh;
@@ -149,5 +173,8 @@
     }
     #heading_nav {
         gap: 5vh;
+    }
+    #made_with {
+        font-size: 1.5rem;
     }
 }

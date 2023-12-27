@@ -29,9 +29,9 @@ function Set_theme(state) {
     }
 }
     
+easter_count++;
 export function ChangeBG_Color() {
-    easter_count++;
-    heading_state = !Boolean(heading_state);
+    heading_state= !Boolean(heading_state);
     console.log(easter_count);
     localStorage.setItem('theme_state', heading_state.toString());
     if (easter_count == 10) {
