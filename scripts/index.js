@@ -1,13 +1,13 @@
 import * as base from './base.js';
 
 let email_state = 0;
-let pane_todo = document.getElementsByClassName("pane_todo");
+let pane_about = document.getElementsByClassName("pane_about");
 let scroll_button = document.getElementById("scroll_down");
 let heading = document.getElementsByClassName("heading")[0];
 let email = document.getElementById("email_button");
 
 function ScrollDown() {
-    pane_todo[0].scrollIntoView({ behavior: 'smooth' });
+    pane_about[0].scrollIntoView({ behavior: 'smooth' });
 }
 
 function displayMail(){
