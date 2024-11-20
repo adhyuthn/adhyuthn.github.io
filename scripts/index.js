@@ -27,8 +27,11 @@ function glitchText() {
     const iterations = beautiful_internet_text.length;
     console.log(`iterations: ${iterations}`);
     let intervalID = setInterval(() => {
+        // https://www.youtube.com/watch?v=W5oawMJaXbU
+        // split string -> Array -> Map each element based on an itertion rule -> join back
         beautiful_internet.innerText = beautiful_internet.innerText.split("").map(
             (element, index) => { 
+                // nth run -> keep first nth elements
                 if (index < counter) {
                     return beautiful_internet_text[index];
                 }
