@@ -56,4 +56,6 @@ beautiful_internet_observer.observe(beautiful_internet);
 scroll_button.addEventListener("click", ScrollDown);
 heading.addEventListener("click", base.ChangeBG_Color)
 email.addEventListener("click", displayMail);
-beautiful_internet.addEventListener("mouseover", glitchText);
+if (!window.matchMedia("(pointer: coarse)").matches) {
+    beautiful_internet.addEventListener("mouseover", glitchText);
+}
