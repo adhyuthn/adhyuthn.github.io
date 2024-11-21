@@ -22,10 +22,10 @@ function displayMail(){
     }
 }
 
-function glitchText() {
+function glitchText(args) {
+    console.log(args);
     let counter = 0;
     const iterations = beautiful_internet_text.length;
-    console.log(`iterations: ${iterations}`);
     let intervalID = setInterval(() => {
         // https://www.youtube.com/watch?v=W5oawMJaXbU
         // split string -> Array -> Map each element based on an itertion rule -> join back
@@ -45,17 +45,23 @@ function glitchText() {
     }, 20);
 }
 
-const beautiful_internet_observer_opts = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 1.0,
-};
-const beautiful_internet_observer = new IntersectionObserver(glitchText, beautiful_internet_observer_opts);
 
-beautiful_internet_observer.observe(beautiful_internet);
 scroll_button.addEventListener("click", ScrollDown);
 heading.addEventListener("click", base.ChangeBG_Color)
 email.addEventListener("click", displayMail);
 if (!window.matchMedia("(pointer: coarse)").matches) {
+    console.log("PC");
+    const beautiful_internet_observer_opts = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 1.0,
+    };
+    const beautiful_internet_observer = new IntersectionObserver(glitchText, beautiful_internet_observer_opts);
+    beautiful_internet_observer.observe(beautiful_internet);
     beautiful_internet.addEventListener("mouseover", glitchText);
+}
+
+else {
+    console.log("mobile");
+    setInterval(glitchText, 2000 + Math.floor(Math.random() * 1000));
 }
