@@ -6,6 +6,7 @@ let scroll_button = document.getElementById("scroll_down");
 let heading = document.getElementsByClassName("heading")[0];
 let email = document.getElementById("email_button");
 let beautiful_internet = document.getElementById("beautiful_internet")
+let beautiful_internet_pane = document.getElementsByClassName("pane_internet")[0];
 const beautiful_internet_text = beautiful_internet.innerText
 
 function ScrollDown() {
@@ -49,19 +50,12 @@ function glitchText(args) {
 scroll_button.addEventListener("click", ScrollDown);
 heading.addEventListener("click", base.ChangeBG_Color)
 email.addEventListener("click", displayMail);
-if (!window.matchMedia("(pointer: coarse)").matches) {
-    console.log("PC");
-    const beautiful_internet_observer_opts = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 1.0,
-    };
-    const beautiful_internet_observer = new IntersectionObserver(glitchText, beautiful_internet_observer_opts);
-    beautiful_internet_observer.observe(beautiful_internet);
-    beautiful_internet.addEventListener("mouseover", glitchText);
-}
-
-else {
-    console.log("mobile");
-    setInterval(glitchText, 2000 + Math.floor(Math.random() * 1000));
-}
+console.log("PC");
+const beautiful_internet_observer_opts = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.55,
+};
+const beautiful_internet_observer = new IntersectionObserver(glitchText, beautiful_internet_observer_opts);
+beautiful_internet_observer.observe(beautiful_internet_pane);
+beautiful_internet.addEventListener("mouseover", glitchText);
