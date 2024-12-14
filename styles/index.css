@@ -69,24 +69,6 @@
     color: var(--text-secondary);
 }
 
-#notif_toast {    
-    position: fixed;
-    translate: translateX(-50%);
-    max-width: max-content;
-    background-color: #3c3c3c62;
-    box-shadow: 1px 1px 1px rgb(43, 43, 43);
-    font-size: 1rem;
-    color: rgb(255, 255, 255);
-    visibility: hidden;
-    border-radius: 30px;
-    padding: 16px;
-    z-index: 1;
-    margin: auto;
-    top: 4vh;
-    left: 0;
-    right: 0;
-}
-
 .pane_about {
     display: flex;
     flex-direction: row;
