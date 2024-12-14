@@ -7,7 +7,6 @@ let heading = document.getElementsByClassName("heading")[0];
 let email = document.getElementById("email_button");
 let beautiful_internet = document.getElementById("beautiful_internet")
 let beautiful_internet_pane = document.getElementsByClassName("pane_internet")[0];
-let notif_toast = document.getElementById("notif_toast")
 const beautiful_internet_text = beautiful_internet.innerText
 
 function ScrollDown() {
