@@ -108,7 +108,7 @@
 
 
 #about_header {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Raleway', monospace;
     font-size: 4rem;
     color: rgb(255, 255, 255);
 }
@@ -157,12 +157,12 @@
     }
     .nav_links_container {
         flex-direction: column;
-        gap: 0.9vh;
+        gap: 2.4vh;
     }
     .nav_links {
-        width: 60vw;
+        width: 70vw;
         height: 4vh;
-        font-size: 2rem;
+        font-size: 2.5rem;
         text-align: center;
         border-radius: 20vw;
     }

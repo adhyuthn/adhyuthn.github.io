@@ -8,7 +8,9 @@ console.log("base.js imported");
 
 const theme_state = localStorage.getItem('theme_state');
 console.log("theme_state set to: ", theme_state);
-Set_theme(theme_state);
+if (theme_state != null) {
+    Set_theme(theme_state);
+}
 
 function Set_theme(state) {
     console.log("Changing theme");
@@ -21,14 +23,15 @@ function Set_theme(state) {
             root_css.style.setProperty('--ui-panes-primary', '#6b6b6b5c');
     }
     else if (state == 'false'){
-            root_css.style.setProperty('--ui-primary-light', '#b6a0ff');
+            root_css.style.setProperty('--ui-primary-light', '#89b4fa');
             root_css.style.setProperty('--ui-primary-dark', '#1a1425');
-            root_css.style.setProperty('--text-primary', '#b6a0ff');
+            root_css.style.setProperty('--text-primary', '#89b4fa');
             root_css.style.setProperty('--text-shadow', '#d1c7f1');
             root_css.style.setProperty('--ui-panes-primary', '#04040471');
         
     }
-    else {
+    else if (state == 'Ojas') {
+        console.log("Ojas mode theme set");
         body_element[0].style.cssText = `
             background-image: linear-gradient(
                 90deg, 

@@ -1,4 +1,4 @@
-@import url("./base.css");
+@import url("../base.css");
 
 body {
     background-image: radial-gradient(var(--ui-primary-light), var(--ui-primary-dark) 90%);

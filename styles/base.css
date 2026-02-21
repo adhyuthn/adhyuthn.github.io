@@ -1,10 +1,10 @@
 /* VARIABLES */
 
 :root {
-    --ui-primary-light:      #b6a0ff;
+    --ui-primary-light:      #89b4fa;
     --ui-primary-dark:       #1a1425;
     --ui-panes-primary:      #04040471;
-    --text-primary:          #b6a0ff;
+    --text-primary:          #89b4fa;
     --text-secondary:        #ffffff;
     --text-shadow:           #d1c7f1;   
 }
