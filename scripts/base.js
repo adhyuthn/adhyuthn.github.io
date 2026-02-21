@@ -73,7 +73,7 @@ export function ChangeBG_Color() {
         Set_theme(heading_state.toString());
     }
     if (easter_count < 10){
-        Send_notif("You are " + (10 - easter_count) + " step away from unlocking Ojas 🚀 ");
+        Send_notif("You are " + (10 - easter_count) + " step away from unlocking Ojas mode");
         console.log("Going to set theme");
         Set_theme(heading_state.toString());
     }
